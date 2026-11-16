@@ -164,3 +164,7 @@ button:focus-visible,a:focus-visible{outline:3px solid #f6cf69}
  .project-glyph .icon-line{width:26px;height:26px}
  .hero-photo__frame{box-shadow:0 20px 45px rgba(0,0,0,.25),0 0 0 6px rgba(239,195,79,.07)}
 }
+
+/* Two verified portfolio projects after removal of Leadflow CRM. */
+.projects-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:640px){.projects-grid{grid-template-columns:minmax(0,1fr)}}
