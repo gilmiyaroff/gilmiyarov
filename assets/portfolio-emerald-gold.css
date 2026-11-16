@@ -517,3 +517,64 @@ h1,h2,h3,p{overflow-wrap:break-word}
   .hero-photo{width:min(92%,286px)}
   .hero-photo__caption{padding:9px 12px}
 }
+
+
+/* Medical case growth — business performance in one consistent location. */
+.case-card{display:flex;flex-direction:column;align-items:stretch}
+.case-revenue{
+  margin-top:auto;
+  padding-top:clamp(20px,2.6vw,28px);
+  border-top:1px solid rgba(233,200,123,.26);
+  min-width:0
+}
+.case-revenue__label{
+  display:block;
+  color:#d0c19b;
+  font-size:10px;
+  line-height:1.5;
+  letter-spacing:.11em;
+  font-weight:800
+}
+.case-revenue__row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  column-gap:18px;
+  row-gap:12px;
+  margin-top:11px
+}
+.case-revenue__values{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  column-gap:9px;
+  row-gap:5px;
+  color:#f6f1e6;
+  font-size:clamp(14px,1.36vw,18px);
+  line-height:1.45;
+  font-weight:700
+}
+.case-revenue__values>span:not(.case-revenue__arrow){white-space:nowrap}
+.case-revenue__arrow{display:inline-flex;flex:none;color:#f0c85f}
+.case-revenue__arrow .icon-line{width:17px;height:17px;transform:rotate(45deg)}
+.case-revenue__growth{
+  color:#f2cd67;
+  font-size:clamp(26px,2.6vw,37px);
+  letter-spacing:-.06em;
+  line-height:1.1;
+  white-space:nowrap;
+  font-weight:800
+}
+.case-revenue__note{
+  margin:10px 0 0!important;
+  color:#a7baa9!important;
+  font-size:11px!important;
+  line-height:1.55!important
+}
+@media(max-width:640px){
+  .case-card{gap:0}
+  .case-card>p{margin-bottom:25px}
+  .case-revenue__values{font-size:clamp(14px,3.9vw,18px)}
+  .case-revenue__growth{font-size:clamp(28px,7vw,37px)}
+}
