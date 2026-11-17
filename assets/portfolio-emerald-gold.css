@@ -826,3 +826,22 @@ h1,h2,h3,p{overflow-wrap:break-word}
   .case-card--unified .case-card__metric strong{font-size:27px}
   .case-card--unified .case-card__metric span{font-size:12.5px}
 }
+
+
+/* Give revenue figures enough width in every unified card. */
+.case-card--unified .case-card__metrics{grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr)}
+.case-card--unified .case-card__metric strong{font-size:clamp(24px,2.1vw,34px)}
+@media(max-width:779px){
+  .case-card--unified .case-card__metrics{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr)}
+  .case-card--unified .case-card__metric strong{font-size:clamp(25px,5.8vw,33px)}
+}
+@media(max-width:420px){
+  .case-card--unified .case-card__metrics{grid-template-columns:minmax(0,1fr);gap:16px}
+  .case-card--unified .case-card__metric+.case-card__metric{
+    border-left:0;
+    border-top:1px solid rgba(245,208,132,.18);
+    padding-left:0;
+    padding-top:16px
+  }
+  .case-card--unified .case-card__metric strong{font-size:clamp(28px,7.8vw,34px)}
+}
