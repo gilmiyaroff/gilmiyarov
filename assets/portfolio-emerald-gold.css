@@ -659,3 +659,16 @@ h1,h2,h3,p{overflow-wrap:break-word}
   .project-art{padding:22px 19px}
   .case-mini-nums{gap:18px}
 }
+
+/* Medical cases: factual monthly metrics without false point estimates */
+.case-revenue__peak{
+  color:#e6dbc4;
+  font-size:clamp(14px,1.1vw,16px);
+  line-height:1.5;
+  font-weight:700;
+  max-width:25ch;
+}
+@media(max-width:640px){
+  .case-revenue__peak{font-size:15px;max-width:100%}
+  .case-revenue__row{align-items:flex-start}
+}
