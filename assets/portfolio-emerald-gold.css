@@ -1050,3 +1050,20 @@ h1,h2,h3,p{overflow-wrap:break-word}
   .hero h1.hero-name{font-size:clamp(37px,10vw,42px)}
   .hero .hero-position{font-size:15px}
 }
+
+
+/* Readable KPI captions: balanced lines, no orphan words on mobile */
+.case-section .case-card--unified .case-card__metric span{
+  font-size:clamp(13px,1.08vw,15px);
+  line-height:1.48;
+  text-wrap:balance;
+  word-break:normal;
+  overflow-wrap:normal;
+  hyphens:none;
+}
+@media(max-width:779px){
+  .case-section .case-card--unified .case-card__metric span{
+    font-size:clamp(13px,3vw,15px);
+    line-height:1.5;
+  }
+}
