@@ -911,3 +911,75 @@ h1,h2,h3,p{overflow-wrap:break-word}
   }
   #process .process-step{padding-block:22px}
 }
+
+
+/* Icon cleanup: headings without ornamental badges; icons only in process steps */
+#approach .about-claim,
+#cases .section__head h2,
+#projects .section__head h2{
+  margin-top:0;
+}
+#approach .what-card{
+  min-height:190px;
+  justify-content:flex-start;
+}
+#approach .what-card h3{
+  margin:0 0 14px;
+}
+#approach .what-card p{
+  font-size:clamp(13px,1vw,15px);
+  line-height:1.65;
+}
+#process .process-step{
+  grid-template-columns:58px minmax(0,.84fr) minmax(0,1fr);
+  column-gap:clamp(14px,2.2vw,30px);
+}
+#process .process-step .no{
+  display:flex;
+  flex-direction:row;
+  align-items:flex-start;
+  justify-content:flex-start;
+  width:48px;
+  gap:0;
+  margin:0;
+  line-height:1;
+}
+#process .process-glyph{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  flex:none;
+}
+#process .process-glyph .icon-line{
+  width:23px;
+  height:23px;
+}
+@media(max-width:960px){
+  #process .process-step{
+    grid-template-columns:54px minmax(0,.85fr) minmax(0,1fr);
+  }
+}
+@media(max-width:800px){
+  #process .process-step{
+    grid-template-columns:50px minmax(0,1fr);
+    column-gap:12px;
+  }
+  #process .process-step .no{
+    grid-column:1;
+    grid-row:1 / span 2;
+    width:45px;
+  }
+  #process .process-step h3{
+    grid-column:2;
+    grid-row:1;
+  }
+  #process .process-step p{
+    grid-column:2;
+    grid-row:2;
+  }
+}
+@media(max-width:640px){
+  #approach .what-card{min-height:0}
+  #approach .what-card h3{margin-bottom:10px}
+  #process .process-step{column-gap:12px}
+}
