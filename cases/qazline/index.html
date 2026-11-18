@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#082f29">
+  <meta name="theme-color" content="#2C3360">
   <meta name="description" content="Qazline — кейс Руслана Гильмиярова: системный маркетинг онлайн-школы, лидогенерация, CRM и продажи, контент, цифровой продукт и команда.">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="ru_RU">
@@ -15,7 +15,7 @@
   <title>Qazline — кейс Руслана Гильмиярова</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{--pine:#082f29;--pine-2:#10483c;--pine-3:#17614b;--ink:#173c31;--muted:#607367;--gold:#eac46d;--gold-dark:#986e1b;--cream:#f6f4ec;--cream-2:#edece2;--line:#d6dcce;--white:#fffdf6;scroll-behavior:smooth}
     *,*:before,*:after{box-sizing:border-box}
@@ -189,6 +189,75 @@
     @media(max-width:720px){.hero-results{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-stat:last-child{grid-column:auto}.product-feature{grid-template-columns:1fr}.product-feature a{grid-column:auto}.social-proof{grid-template-columns:1fr;gap:0}.social-proof>div{padding:18px 0}.social-proof>div+div{border-top:1px solid var(--line)}.social-proof strong{font-size:clamp(46px,10vw,61px)}.organic-results__stat{min-height:0}}
     @media(max-width:480px){.hero-results{grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.hero-stat:last-child{grid-column:auto}.hero-stat:last-child strong{font-size:clamp(34px,8vw,42px)}.hero-stat strong{font-size:clamp(34px,8vw,42px)}.hero-stat p{font-size:13px}.organic-results__stat strong{font-size:clamp(32px,8vw,43px)}.social-proof strong{font-size:clamp(45px,11vw,59px)}}
     @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.btn{transition:none}}
+
+    /* Qazline brand guidelines: Inter + Oswald, Deep Indigo / Vivid Orange. */
+    :root{
+      --pine:#2C3360;--pine-2:#3c4478;--pine-3:#4E558B;
+      --ink:#1C2040;--muted:#626984;--gold:#EF630E;--gold-dark:#D95200;
+      --cream:#F4F6FA;--cream-2:#FFF1E6;--line:#E5E6EA;--white:#FFFFFF;
+    }
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+    h1,h2,h3,.hero-stat strong,.organic-results__stat strong,.social-proof strong,.view-stat strong,.lead-trend__values b,.lead-trend__values strong,.follow-compare strong{
+      font-family:Oswald,Impact,"Arial Narrow",sans-serif;font-weight:600;letter-spacing:-.018em;
+    }
+    h1{font-size:clamp(57px,7.6vw,108px);line-height:1.08;max-width:1120px}
+    .section h2,.story h2{font-size:clamp(44px,5.2vw,72px);line-height:1.13;letter-spacing:-.02em}
+    .top{background:#1C2040;border-color:#4E558B}
+    .mark{background:var(--gold);color:#fff;border-radius:5px;font-family:Oswald,sans-serif;font-weight:600}
+    .return{color:#FFB98A}
+    .hero{position:relative;background:radial-gradient(circle at 90% 12%,#4E558B 0,transparent 43%),#2C3360}
+    .hero .wrap{position:relative;z-index:1}
+    .hero:before{content:"";position:absolute;width:min(44vw,540px);aspect-ratio:1;right:-100px;top:-160px;border:95px solid rgba(244,246,250,.055);border-radius:50%;pointer-events:none}
+    .hero:after{content:"";position:absolute;right:0;bottom:0;left:0;height:13px;opacity:.85;background:repeating-linear-gradient(90deg,#EF630E 0 28px,#FFB98A 28px 42px,#2C3360 42px 54px,#4E558B 54px 69px);pointer-events:none}
+    h1 span{color:#FFB98A}
+    .hero-lead,.hero-stat p{color:#F4F6FA}
+    .hero-stat{border-color:#7379a1}
+    .hero-stat strong{color:#FFB98A;font-size:clamp(49px,5.8vw,80px)}
+    .eyebrow,.section-index{color:var(--gold)}
+    .jump{background:#1C2040;border-color:#4E558B;color:#f4f6fa}
+    .jump span{color:#FFB98A}
+    .story{border-top:1px solid var(--line)}
+    .section:nth-of-type(even){background:#FFF1E6}
+    .funnel,.lead-trend,.social-card,.product-item{border-radius:13px}
+    .lead-trend__values span b{font-size:clamp(29px,3vw,39px)}
+    .lead-trend__values strong{color:var(--gold-dark)}
+    .lead-trend__values i,.follow-compare i{color:#EF630E}
+    .lead-trend__values span:nth-of-type(2) b{color:var(--pine)}
+    .lead-trend__name,.funnel-label span{color:var(--muted)}
+    .organic-results{background:var(--pine);border-radius:12px}
+    .organic-results__stat{border-color:#7077a4}
+    .organic-results__stat strong{color:#FFB98A;font-size:clamp(46px,5.4vw,72px)}
+    .organic-results__stat span{color:#fff}
+    .organic-results__intro span{color:#FFB98A}
+    .organic-results__intro h3{letter-spacing:-.01em}
+    .organic-footline b{color:var(--pine)}
+    .social-proof strong{font-size:clamp(53px,6vw,81px);color:var(--pine)}
+    .subhead h3{letter-spacing:-.02em}
+    .follow-compare strong{letter-spacing:0}
+    .follow-compare div:last-child strong{color:var(--gold-dark)}
+    .view-stat strong{color:var(--pine)}
+    .system-step .no{color:var(--gold-dark)}
+    .product-feature a,.product-item a{color:var(--gold-dark)}
+    .closing{background:#2C3360}
+    .closing p{color:#E5E6EA}
+    .btn{border-color:#FFB98A;border-radius:6px}
+    .btn.primary{background:var(--gold);border-color:var(--gold);color:#fff}
+    .btn.secondary{color:#FFB98A}
+    .foot{background:#1C2040;color:#c3c6d8}
+    .foot a{color:#FFB98A}
+    @media(max-width:720px){
+      .hero h1{font-size:clamp(51px,10.5vw,71px)}
+      .hero-stat strong,.hero-stat:last-child strong{font-size:clamp(42px,8vw,58px)}
+      .section h2,.story h2{font-size:clamp(40px,9vw,54px)}
+      .social-proof strong{font-size:clamp(52px,11vw,68px)}
+      .organic-results__stat strong{font-size:clamp(36px,8vw,50px)}
+      .hero:before{right:-130px;top:-70px;border-width:48px}
+    }
+    @media(max-width:480px){
+      .hero h1{font-size:clamp(48px,11vw,62px)}
+      .hero-stat strong,.hero-stat:last-child strong{font-size:clamp(40px,9vw,50px)}
+      .follow-compare strong{font-size:clamp(21px,5vw,26px)}
+    }
   </style>
 </head>
 <body>
