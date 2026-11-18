@@ -117,6 +117,46 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
   .hero-metric strong{font-size:30px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+
+/* Audience growth: comparable end-of-month subscriber snapshots. */
+.audience{background:#eae7d9}
+.audience-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:33px}
+.audience-heading h2{margin:0}
+.audience-heading p{max-width:360px;margin:0 0 4px;color:#526b5e;font-size:15px;line-height:1.6}
+.audience-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.audience-card{min-width:0;border:1px solid #d2d5c5;background:#fbf9f1;border-radius:22px;padding:clamp(23px,2.5vw,32px)}
+.audience-card h3{font-size:clamp(24px,2.2vw,30px);letter-spacing:-.045em;line-height:1.15;margin:0 0 28px}
+.audience-card__numbers{display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr);align-items:end;gap:10px}
+.audience-card__numbers>div{min-width:0}
+.audience-card__numbers div span{display:block;color:#60756a;font-size:13px;font-weight:600;margin-bottom:8px}
+.audience-card__numbers strong{display:block;color:#123e31;font-weight:800;font-size:clamp(22px,2vw,29px);line-height:1.15;letter-spacing:-.045em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.audience-card__numbers>div:last-child strong{color:#936615}
+.audience-card__arrow{color:#b18c3b;font-size:22px;line-height:1.12;align-self:end}
+.audience-card p{margin:26px 0 0;padding-top:20px;border-top:1px solid #ddd7bd;color:#365b49;font-size:15px;font-weight:750;line-height:1.5}
+@media(max-width:1040px){
+  .audience-heading{align-items:flex-start;flex-direction:column;gap:10px}
+  .audience-heading p{max-width:100%}
+  .audience-grid{grid-template-columns:minmax(0,1fr);gap:13px}
+  .audience-card{padding:28px 30px}
+  .audience-card h3{margin-bottom:20px}
+  .audience-card__numbers{max-width:440px;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);gap:14px}
+  .audience-card__numbers strong{font-size:clamp(25px,4vw,35px)}
+  .audience-card p{margin-top:20px;padding-top:16px}
+}
+@media(max-width:600px){
+  .audience-heading{margin-bottom:24px}
+  .audience-heading p{font-size:14px}
+  .audience-card{padding:24px 21px;border-radius:19px}
+  .audience-card__numbers{grid-template-columns:minmax(0,1fr) 19px minmax(0,1fr);gap:8px}
+  .audience-card__numbers strong{font-size:clamp(22px,6vw,31px)}
+  .audience-card__numbers div span{font-size:12px}
+  .audience-card__arrow{font-size:19px}
+}
+@media(max-width:360px){
+  .audience-card__numbers{gap:5px;grid-template-columns:minmax(0,1fr) 15px minmax(0,1fr)}
+  .audience-card__numbers strong{font-size:21px}
+}
+
 </style>
 </head>
 <body>
@@ -178,6 +218,43 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
       <div class="outcome-item"><strong>+94,3%</strong><span>Рост продаж из органического Instagram.</span></div>
     </div>
     <p class="outcome-period">Прибыль: сентябрь 2025 — август 2026 к предыдущим 12 месяцам. Продажи из органического Instagram: январь–август 2026 к январю–августу 2025.</p>
+  </div>
+</section>
+<section class="case-section audience" aria-labelledby="audience-title">
+  <div class="wrap">
+    <div class="audience-heading">
+      <h2 id="audience-title">Рост аудитории.</h2>
+      <p>Количество подписчиков на конец мая и октября 2026 года.</p>
+    </div>
+    <div class="audience-grid">
+      <article class="audience-card">
+        <h3>Instagram</h3>
+        <div class="audience-card__numbers" aria-label="Было 104 523, стало 112 797 подписчиков">
+          <div><span>Было</span><strong>104 523</strong></div>
+          <span class="audience-card__arrow" aria-hidden="true">→</span>
+          <div><span>Стало</span><strong>112 797</strong></div>
+        </div>
+        <p>+8 274 подписчика</p>
+      </article>
+      <article class="audience-card">
+        <h3>TikTok</h3>
+        <div class="audience-card__numbers" aria-label="Было 10 399, стало 12 603 подписчика">
+          <div><span>Было</span><strong>10 399</strong></div>
+          <span class="audience-card__arrow" aria-hidden="true">→</span>
+          <div><span>Стало</span><strong>12 603</strong></div>
+        </div>
+        <p>+2 204 подписчика</p>
+      </article>
+      <article class="audience-card">
+        <h3>YouTube</h3>
+        <div class="audience-card__numbers" aria-label="Было 13 156, стало 39 171 подписчик">
+          <div><span>Было</span><strong>13 156</strong></div>
+          <span class="audience-card__arrow" aria-hidden="true">→</span>
+          <div><span>Стало</span><strong>39 171</strong></div>
+        </div>
+        <p>+26 015 подписчиков</p>
+      </article>
+    </div>
   </div>
 </section>
 <section class="case-section contact" aria-labelledby="contact-title">
