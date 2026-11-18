@@ -169,6 +169,25 @@
     @media(max-width:950px){.lead-trend{padding:25px 22px}.lead-trend__values{gap:6px;grid-template-columns:minmax(0,1fr) 14px minmax(0,1.2fr)}.lead-trend__values strong{grid-column:1/-1;font-size:15px;padding:0}.organic-results{gap:15px;padding:28px 23px}.organic-results__stat{padding-left:17px}}
     @media(max-width:720px){.organic-results{grid-template-columns:1fr 1fr;gap:20px}.organic-results__intro{grid-column:1/-1}.organic-results__intro h3 br{display:none}.organic-results__stat:nth-child(2){border-left:0;padding-left:0}.lead-trend__values{grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr) auto}.lead-trend__values strong{grid-column:auto}.social-proof{gap:16px}}
     @media(max-width:480px){.organic-results{padding:25px 20px;gap:22px 12px}.organic-results__stat{padding-left:11px}.organic-results__stat strong{font-size:clamp(28px,7vw,35px)}.organic-results__stat span{font-size:12px}.organic-results__stat p{font-size:12px}.lead-trend{padding:23px 19px}.lead-trend__values{grid-template-columns:minmax(0,1fr) 15px minmax(0,1fr);gap:6px}.lead-trend__values span b{font-size:clamp(26px,7vw,31px)}.lead-trend__values strong{grid-column:1/-1;font-size:15px;padding:3px 0 0}.lead-trend__quality{align-items:flex-start;flex-direction:column;gap:5px}.lead-trend__quality>strong{font-size:24px}.social-proof strong{font-size:clamp(23px,6vw,32px)}.social-proof span{font-size:11px}}
+    .hero-results{grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px}
+    .hero-stat p{font-size:clamp(16px,1.5vw,20px);font-weight:700;color:#e7efe7;margin-top:12px}
+    .hero-stat:last-child{grid-column:auto}
+    .lead-trend__row:last-child{border-bottom:0}
+    .lead-trend__values span b{font-size:clamp(26px,2.65vw,34px)}
+    .organic-results__intro h3{max-width:250px}
+    .organic-results__stat strong{font-size:clamp(39px,4.7vw,60px)}
+    .organic-results__stat{min-height:110px;display:flex;flex-direction:column;justify-content:center}
+    .social-proof{padding:36px 0 40px;gap:27px}
+    .social-proof strong{font-size:clamp(46px,5.3vw,68px);line-height:1.07}
+    .social-proof span{font-size:15px;line-height:1.6;margin-top:11px}
+    .product-feature{display:grid;grid-template-columns:1fr 1.15fr auto;align-items:center;gap:35px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:33px 0}
+    .product-feature .section-index{margin-bottom:14px}
+    .product-feature h3{font-size:clamp(24px,2.5vw,34px);letter-spacing:-.045em;line-height:1.2;margin:0}
+    .product-feature p{color:var(--muted);font-size:14px;line-height:1.8;margin:0}
+    .product-feature a{color:var(--pine-3);font-weight:800;font-size:14px;white-space:nowrap}
+    @media(max-width:900px){.product-feature{grid-template-columns:1fr 1.25fr;gap:20px}.product-feature a{grid-column:1/-1}.social-proof strong{font-size:clamp(37px,5vw,54px)}}
+    @media(max-width:720px){.hero-results{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-stat:last-child{grid-column:auto}.product-feature{grid-template-columns:1fr}.product-feature a{grid-column:auto}.social-proof{grid-template-columns:1fr;gap:0}.social-proof>div{padding:18px 0}.social-proof>div+div{border-top:1px solid var(--line)}.social-proof strong{font-size:clamp(46px,10vw,61px)}.organic-results__stat{min-height:0}}
+    @media(max-width:480px){.hero-results{grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.hero-stat:last-child{grid-column:auto}.hero-stat:last-child strong{font-size:clamp(34px,8vw,42px)}.hero-stat strong{font-size:clamp(34px,8vw,42px)}.hero-stat p{font-size:13px}.organic-results__stat strong{font-size:clamp(32px,8vw,43px)}.social-proof strong{font-size:clamp(45px,11vw,59px)}}
     @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.btn{transition:none}}
   </style>
 </head>
@@ -186,9 +205,8 @@
         <h1 id="title">Qazline.<br><span>Маркетинг как система роста.</span></h1>
         <p class="hero-lead">За год работы выстроил системный маркетинг онлайн-школы, собрал команду и связал привлечение, продажи, контент и развитие продукта. Результат — рост аудитории и показателей бизнеса.</p>
         <div class="hero-results" aria-label="Ключевые результаты">
-          <div class="hero-stat"><strong>+38,6%</strong><p>Рост денежных поступлений</p><small>За сопоставимые 12 месяцев</small></div>
-          <div class="hero-stat"><strong>+163,4%</strong><p>Рост квалифицированных лидов CRM</p><small>За сопоставимые периоды</small></div>
-          <div class="hero-stat"><strong>+94,3%</strong><p>Рост продаж из органического Instagram</p><small>Год к году</small></div>
+          <div class="hero-stat"><strong>+38%</strong><p>Денежные поступления</p></div>
+          <div class="hero-stat"><strong>+163%</strong><p>Квалифицированные лиды</p></div>
         </div>
       </div>
     </section>
@@ -210,13 +228,13 @@
     <section class="section" id="leads" aria-labelledby="leads-title">
       <div class="wrap">
         <div class="section-head">
-          <div><span class="section-index">01 / Привлечение</span><h2 id="leads-title">Не просто лиды. Качество входящего потока.</h2></div>
+          <div><span class="section-index">01 / Привлечение</span><h2 id="leads-title">Качество входящего потока.</h2></div>
           <p>Смотрел на воронку в CRM: сколько обращений пришло, какая часть квалифицирована и как источники приводят к реальным продажам.</p>
         </div>
         <div class="leads-area">
           <div>
             <div class="lead-trend" aria-label="Рост лидов и квалификации за сопоставимые периоды">
-              <div class="minor-title">До / После · сопоставимые 8 месяцев</div>
+              <div class="minor-title">Лиды · до и после</div>
               <div class="lead-trend__row">
                 <span class="lead-trend__name">Лиды отслеживаемых каналов CRM</span>
                 <div class="lead-trend__values"><span><small>До</small><b>4 917</b></span><i aria-hidden="true">→</i><span><small>После</small><b>11 055</b></span><strong>+124,8%</strong></div>
@@ -225,9 +243,11 @@
                 <span class="lead-trend__name">Квалифицированные лиды</span>
                 <div class="lead-trend__values"><span><small>До</small><b>2 112</b></span><i aria-hidden="true">→</i><span><small>После</small><b>5 563</b></span><strong>+163,4%</strong></div>
               </div>
-              <div class="lead-trend__quality"><div><span>Доля квалифицированных</span><b>43,0% <i>→</i> 50,3%</b></div><strong>+7,4 п.п.</strong></div>
+              <div class="lead-trend__row">
+                <span class="lead-trend__name">Доля квалифицированных лидов</span>
+                <div class="lead-trend__values"><span><small>До</small><b>43,0%</b></span><i aria-hidden="true">→</i><span><small>После</small><b>50,3%</b></span><strong>+7,4 п.п.</strong></div>
+              </div>
             </div>
-            <p class="subnote">Сравнение по одному набору отслеживаемых каналов CRM.</p>
           </div>
           <ul class="action-list" aria-label="Что было сделано с лидогенерацией">
             <li><strong>Настроил прозрачность источников</strong><span>Разделил платный и органический спрос, связал заявки с каналами привлечения.</span></li>
@@ -241,9 +261,9 @@
       <div class="wrap">
         <div class="section-head"><div><span class="section-index">02 / Контент и соцсети</span><h2 id="social-title">Контент, который приводит к продажам.</h2></div><p>Выстроил регулярное производство контента для Instagram, TikTok и YouTube, объединив рост аудитории с измерением обращений и продаж.</p></div>
         <div class="organic-results" aria-label="Коммерческий результат органического Instagram">
-          <div class="organic-results__intro"><span>Органический Instagram</span><h3>От просмотров<br>к оплатам.</h3><p>Сопоставимые периоды год к году</p></div>
-          <div class="organic-results__stat"><strong>+94,3%</strong><span>Успешные продажи</span><p>140 <i>→</i> 272</p></div>
-          <div class="organic-results__stat"><strong>+120,7%</strong><span>CRM-выручка</span><p>12,96 <i>→</i> 28,59 млн ₸</p></div>
+          <div class="organic-results__intro"><span>Органический Instagram</span><h3>От просмотров к оплатам.</h3></div>
+          <div class="organic-results__stat"><strong>+94%</strong><span>Успешные продажи</span></div>
+          <div class="organic-results__stat"><strong>+120%</strong><span>Выручка</span></div>
         </div>
         <p class="organic-footline">Органические обращения Instagram <b>+28,1%</b><span aria-hidden="true">·</span> квалифицированные обращения <b>+42,9%</b></p>
         <div class="social-proof">
@@ -251,7 +271,7 @@
           <div><strong>59 930</strong><span>новых подписок</span></div>
           <div><strong>865</strong><span>опубликованных единиц контента</span></div>
         </div>
-        <div class="subhead"><h3>Рост аудитории</h3><p>До / после, округлённые значения</p></div>
+        <div class="subhead"><h3>Рост аудитории</h3></div>
         <div class="social-grid">
           <article class="social-card" aria-label="Instagram: 96 тысяч до, 112 тысяч после">
             <div class="social-logo instagram" role="img" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></div>
@@ -267,29 +287,29 @@
           </article>
         </div>
         <div class="social-views">
-          <div class="view-stat"><strong>+227,6%</strong><span>Рост просмотров Instagram год к году за сопоставимый период</span></div>
-          <div class="view-stat"><strong>×114,4</strong><span>Рост просмотров YouTube год к году за сопоставимый период</span></div>
+          <div class="view-stat"><strong>+227%</strong><span>Рост просмотров Instagram</span></div>
+          <div class="view-stat"><strong>×114,4</strong><span>Рост просмотров YouTube</span></div>
         </div>
       </div>
     </section>
     <section class="section product" id="product" aria-labelledby="product-title">
       <div class="wrap">
-        <div class="section-head"><div><span class="section-index">03 / Продукт и цифровизация</span><h2 id="product-title">За рамками классического маркетинга.</h2></div><p>Параллельно с продвижением участвовал в развитии продуктовой логики школы и цифровых инструментов для учеников и команды.</p></div>
-        <div class="product-list">
-          <article class="product-item"><span class="count">01 / DIGITAL</span><h3>Qazline Digital</h3><p>Работа над концепцией и архитектурой цифровой школы: как ученик проходит обучение и взаимодействует с материалами.</p></article>
-          <article class="product-item"><span class="count">02 / LEARNING</span><h3>Интерактивные уроки</h3><p>Прототипы, в которых просмотр видео продолжается заданиями и проверкой знаний. Обучение становится практикой.</p><a href="https://gilmiyaroff.github.io/qazline_test/" target="_blank" rel="noopener noreferrer">Посмотреть пример урока ↗</a></article>
-          <article class="product-item"><span class="count">03 / OPERATIONS</span><h3>School OS</h3><p>Проработка системы учёта учеников, статусов и семейных связей — основы для единого операционного пространства школы.</p></article>
+        <div class="section-head"><div><span class="section-index">03 / Продукт</span><h2 id="product-title">Интерактивное обучение.</h2></div><p>Разработал прототипы уроков, где просмотр видео дополняется заданиями и проверкой ответов.</p></div>
+        <div class="product-feature">
+          <div><span class="section-index">Реализованный прототип</span><h3>От видео к практике.</h3></div>
+          <p>Ученик изучает материал, затем закрепляет его в интерактивных заданиях. Один из примеров — урок «Кию».</p>
+          <a href="https://gilmiyaroff.github.io/qazline_test/" target="_blank" rel="noopener noreferrer">Посмотреть урок ↗</a>
         </div>
       </div>
     </section>
     <section class="section system" id="system" aria-labelledby="system-title">
       <div class="wrap">
-        <div class="section-head"><div><span class="section-index">04 / Управление</span><h2 id="system-title">Собрал маркетинг в управляемую систему.</h2></div><p>Моя ключевая роль — связать стратегию, команду, данные и регулярные управленческие решения, а не просто запустить отдельные инструменты.</p></div>
+        <div class="section-head"><div><span class="section-index">04 / Управление</span><h2 id="system-title">Как организовал работу маркетинга.</h2></div><p>Управленческие изменения, которые позволили регулярно планировать, исполнять и оценивать работу команды.</p></div>
         <div class="system-flow">
-          <div class="system-step"><span class="no">01</span><h3>Стратегия</h3><p>Приоритеты каналов, планирование, гипотезы и продуктовые предложения.</p></div>
-          <div class="system-step"><span class="no">02</span><h3>Команда</h3><p>Процессы производства контента и совместная работа маркетинга с продажами.</p></div>
-          <div class="system-step"><span class="no">03</span><h3>Аналитика</h3><p>Общая отчётность по рекламе, контенту, лидам и CRM-продажам.</p></div>
-          <div class="system-step"><span class="no">04</span><h3>Контроль</h3><p>Регулярный разбор показателей, стоимости привлечения и результата продаж.</p></div>
+          <div class="system-step"><span class="no">01</span><h3>Приоритеты</h3><p>Планирование направлений, гипотез и ожидаемых результатов.</p></div>
+          <div class="system-step"><span class="no">02</span><h3>Команда и роли</h3><p>Распределение задач, зоны ответственности и координация исполнения.</p></div>
+          <div class="system-step"><span class="no">03</span><h3>Отчётность</h3><p>Единый обзор показателей рекламы, контента и продаж для команды.</p></div>
+          <div class="system-step"><span class="no">04</span><h3>Рабочий ритм</h3><p>Регулярные встречи, разбор результатов и выбор следующих действий.</p></div>
         </div>
       </div>
     </section>
