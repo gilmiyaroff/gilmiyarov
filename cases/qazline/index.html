@@ -137,6 +137,38 @@
     @media(max-width:950px){.wrap{width:min(100% - 44px,1160px)}.section-head{gap:40px}.leads-area{gap:32px}.story-grid{gap:50px}.product-item{padding:25px 20px}.system-step{padding-right:17px}.system-step:not(:last-child){margin-right:17px}}
     @media(max-width:720px){.wrap{width:calc(100% - 38px)}.hero{padding:65px 0 63px}.hero-results{gap:15px;margin-top:54px}.hero-stat strong{font-size:clamp(29px,6vw,41px)}.hero-stat p{font-size:12px}.hero-stat small{font-size:11px}.jump .wrap{gap:24px}.story,.section{padding:67px 0}.story-grid,.section-head,.leads-area{grid-template-columns:1fr;gap:26px}.section-head{margin-bottom:31px}.story p{font-size:15px}.sales-main{gap:25px}.sales-main article+article{padding-left:25px}.social-grid{gap:9px}.social-card{padding:19px 12px 23px}.social-logo{margin-bottom:18px}.follow-compare{gap:5px}.follow-compare strong{font-size:clamp(22px,4.2vw,29px)}.follow-compare span{font-size:11px}.follow-compare i{font-size:16px}.product-list{grid-template-columns:1fr}.product-item{min-height:0;padding:25px}.product-item h3{margin:23px 0 9px}.system-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.system-step{padding:25px 15px 25px 0}.system-step:not(:last-child){margin-right:0;border-right:0}.system-step:nth-child(odd){border-right:1px solid var(--line);padding-right:20px}.system-step:nth-child(even){padding-left:20px}.system-step:nth-child(-n+2){border-bottom:1px solid var(--line)}.system-step .no{margin-bottom:15px}.closing .wrap{flex-direction:column;align-items:flex-start}.closing{padding:68px 0}}
     @media(max-width:480px){.top .wrap{min-height:69px}.brand{font-size:11px;gap:8px}.mark{width:34px;height:34px;font-size:12px}.return{font-size:11px}.hero h1{font-size:clamp(42px,10vw,54px)}.hero-lead{font-size:15px;line-height:1.75}.hero-results{grid-template-columns:1fr 1fr;row-gap:21px}.hero-stat:last-child{grid-column:1/-1}.hero-stat:last-child strong{font-size:43px}.hero-stat{padding-top:16px}.hero-stat strong{font-size:clamp(34px,8vw,42px)}.section h2,.story h2{font-size:clamp(34px,9vw,45px)}.funnel{padding:25px 21px}.funnel-label strong{font-size:30px}.sales-main{grid-template-columns:1fr;gap:32px}.sales-main article+article{padding-left:0;border-left:0;border-top:1px solid #466b5e;padding-top:30px}.sales-main strong{font-size:58px}.sales-note{flex-direction:column;gap:6px}.social-grid{gap:6px}.social-card{padding:17px 7px;border-radius:12px}.social-logo{width:30px;height:30px;margin-bottom:14px}.social-logo svg{width:29px;height:29px}.follow-compare{flex-direction:column;align-items:flex-start;gap:3px}.follow-compare div{display:flex;gap:5px;align-items:baseline}.follow-compare span{margin:0;font-size:10px}.follow-compare strong{font-size:clamp(20px,5vw,25px)}.follow-compare i{transform:rotate(90deg);font-size:13px;margin-left:15px;line-height:1}.subhead{align-items:flex-start;flex-direction:column;gap:8px;margin-top:48px}.social-proof{gap:14px}.social-proof strong{font-size:32px}.social-views{gap:15px}.view-stat strong{font-size:29px}.view-stat span{font-size:12px}.foot .wrap{flex-wrap:wrap}}
+    /* Verified commercial and lead dynamics, presented in separate comparable cohorts. */
+    .lead-trend{padding:31px 35px 28px;border:1px solid var(--line);border-radius:20px;background:var(--white)}
+    .lead-trend .minor-title{margin-bottom:9px}
+    .lead-trend__row{padding:20px 0;border-bottom:1px solid var(--line)}
+    .lead-trend__name{display:block;margin-bottom:13px;color:var(--muted);font-size:14px;font-weight:700}
+    .lead-trend__values{display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1.1fr) auto;align-items:end;gap:11px;font-variant-numeric:tabular-nums}
+    .lead-trend__values span small{display:block;font-size:11px;color:#8a968a;margin-bottom:3px}
+    .lead-trend__values span b{display:block;font-size:clamp(26px,2.65vw,34px);letter-spacing:-.06em;line-height:1.14}
+    .lead-trend__values span:nth-of-type(2) b{color:var(--pine-3)}
+    .lead-trend__values i{font-style:normal;color:#b3944a;font-size:20px;padding-bottom:4px}
+    .lead-trend__values strong{font-size:16px;color:var(--gold-dark);padding-bottom:5px;white-space:nowrap}
+    .lead-trend__quality{display:flex;justify-content:space-between;align-items:end;gap:15px;padding-top:23px}
+    .lead-trend__quality span{display:block;color:var(--muted);font-size:13px;margin-bottom:7px}
+    .lead-trend__quality div b{display:block;white-space:nowrap;font-size:clamp(22px,2.8vw,33px);letter-spacing:-.055em}
+    .lead-trend__quality i{font-style:normal;color:#b3944a}
+    .lead-trend__quality>strong{color:var(--pine-3);font-size:clamp(20px,2.2vw,27px);letter-spacing:-.04em;white-space:nowrap}
+    .organic-results{display:grid;grid-template-columns:.9fr 1fr 1fr;gap:25px;align-items:center;background:var(--pine);color:var(--white);border-radius:20px;padding:32px 35px}
+    .organic-results__intro span{font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:800;color:var(--gold)}
+    .organic-results__intro h3{margin:11px 0 8px;font-size:clamp(21px,2.4vw,30px);line-height:1.22;letter-spacing:-.045em}
+    .organic-results__intro p{color:#a9c5b4;font-size:11px;line-height:1.6;margin:0}
+    .organic-results__stat{border-left:1px solid #426d5a;padding-left:26px}
+    .organic-results__stat strong{display:block;font-size:clamp(34px,3.8vw,50px);line-height:1.18;letter-spacing:-.065em;color:var(--gold);font-variant-numeric:tabular-nums}
+    .organic-results__stat span{display:block;font-size:14px;color:#ecf3e9;margin-top:6px}
+    .organic-results__stat p{font-size:17px;color:#e2eee3;font-variant-numeric:tabular-nums;margin:13px 0 0;font-weight:800}
+    .organic-results__stat i{font-style:normal;color:var(--gold)}
+    .organic-footline{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin:14px 0 23px!important;font-size:13px;color:var(--muted);line-height:1.7}
+    .organic-footline b{color:var(--pine-3);font-size:15px}
+    .organic-footline span{color:#aa9b6f}
+    .social-proof{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:0}
+    @media(max-width:950px){.lead-trend{padding:25px 22px}.lead-trend__values{gap:6px;grid-template-columns:minmax(0,1fr) 14px minmax(0,1.2fr)}.lead-trend__values strong{grid-column:1/-1;font-size:15px;padding:0}.organic-results{gap:15px;padding:28px 23px}.organic-results__stat{padding-left:17px}}
+    @media(max-width:720px){.organic-results{grid-template-columns:1fr 1fr;gap:20px}.organic-results__intro{grid-column:1/-1}.organic-results__intro h3 br{display:none}.organic-results__stat:nth-child(2){border-left:0;padding-left:0}.lead-trend__values{grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr) auto}.lead-trend__values strong{grid-column:auto}.social-proof{gap:16px}}
+    @media(max-width:480px){.organic-results{padding:25px 20px;gap:22px 12px}.organic-results__stat{padding-left:11px}.organic-results__stat strong{font-size:clamp(28px,7vw,35px)}.organic-results__stat span{font-size:12px}.organic-results__stat p{font-size:12px}.lead-trend{padding:23px 19px}.lead-trend__values{grid-template-columns:minmax(0,1fr) 15px minmax(0,1fr);gap:6px}.lead-trend__values span b{font-size:clamp(26px,7vw,31px)}.lead-trend__values strong{grid-column:1/-1;font-size:15px;padding:3px 0 0}.lead-trend__quality{align-items:flex-start;flex-direction:column;gap:5px}.lead-trend__quality>strong{font-size:24px}.social-proof strong{font-size:clamp(23px,6vw,32px)}.social-proof span{font-size:11px}}
     @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.btn{transition:none}}
   </style>
 </head>
@@ -155,8 +187,8 @@
         <p class="hero-lead">За год работы выстроил системный маркетинг онлайн-школы, собрал команду и связал привлечение, продажи, контент и развитие продукта. Результат — рост аудитории и показателей бизнеса.</p>
         <div class="hero-results" aria-label="Ключевые результаты">
           <div class="hero-stat"><strong>+38,6%</strong><p>Рост денежных поступлений</p><small>За сопоставимые 12 месяцев</small></div>
-          <div class="hero-stat"><strong>+34,5%</strong><p>Рост суммы повторных оплат</p><small>Год к году</small></div>
-          <div class="hero-stat"><strong>78,2 млн</strong><p>Просмотров контента на трёх площадках</p><small>За 10 месяцев отчётности</small></div>
+          <div class="hero-stat"><strong>+163,4%</strong><p>Рост квалифицированных лидов CRM</p><small>За сопоставимые периоды</small></div>
+          <div class="hero-stat"><strong>+94,3%</strong><p>Рост продаж из органического Instagram</p><small>Год к году</small></div>
         </div>
       </div>
     </section>
@@ -184,19 +216,19 @@
         </div>
         <div class="leads-area">
           <div>
-            <div class="funnel" aria-label="Пример месячной воронки лидов">
-              <div class="minor-title">Воронка обращений / месячный срез</div>
-              <div class="funnel-line">
-                <div class="funnel-label"><span>Все созданные лиды CRM</span><strong>2 263</strong></div>
-                <div class="funnel-track"><b style="width:100%"></b></div>
+            <div class="lead-trend" aria-label="Рост лидов и квалификации за сопоставимые периоды">
+              <div class="minor-title">До / После · сопоставимые 8 месяцев</div>
+              <div class="lead-trend__row">
+                <span class="lead-trend__name">Лиды отслеживаемых каналов CRM</span>
+                <div class="lead-trend__values"><span><small>До</small><b>4 917</b></span><i aria-hidden="true">→</i><span><small>После</small><b>11 055</b></span><strong>+124,8%</strong></div>
               </div>
-              <div class="funnel-line">
-                <div class="funnel-label"><span>Квалифицированные лиды</span><strong>1 243</strong></div>
-                <div class="funnel-track"><b style="width:54.9%"></b></div>
+              <div class="lead-trend__row">
+                <span class="lead-trend__name">Квалифицированные лиды</span>
+                <div class="lead-trend__values"><span><small>До</small><b>2 112</b></span><i aria-hidden="true">→</i><span><small>После</small><b>5 563</b></span><strong>+163,4%</strong></div>
               </div>
-              <div class="funnel-bottom"><strong>54,9%</strong><span>доля квалифицированных<br>от всех созданных лидов</span></div>
+              <div class="lead-trend__quality"><div><span>Доля квалифицированных</span><b>43,0% <i>→</i> 50,3%</b></div><strong>+7,4 п.п.</strong></div>
             </div>
-            <p class="subnote">Один операционный срез CRM, а не сравнение за год.</p>
+            <p class="subnote">Сравнение по одному набору отслеживаемых каналов CRM.</p>
           </div>
           <ul class="action-list" aria-label="Что было сделано с лидогенерацией">
             <li><strong>Настроил прозрачность источников</strong><span>Разделил платный и органический спрос, связал заявки с каналами привлечения.</span></li>
@@ -228,9 +260,16 @@
     </section>
     <section class="section social" id="social" aria-labelledby="social-title">
       <div class="wrap">
-        <div class="section-head"><div><span class="section-index">03 / Контент и соцсети</span><h2 id="social-title">Контент стал самостоятельным источником роста.</h2></div><p>Выстроил регулярное производство контента для Instagram, TikTok и YouTube, добавил аналитику охватов, вовлечения и переходов в воронку.</p></div>
+        <div class="section-head"><div><span class="section-index">03 / Контент и соцсети</span><h2 id="social-title">Контент, который приводит к продажам.</h2></div><p>Выстроил регулярное производство контента для Instagram, TikTok и YouTube, объединив рост аудитории с измерением обращений и продаж.</p></div>
+        <div class="organic-results" aria-label="Коммерческий результат органического Instagram">
+          <div class="organic-results__intro"><span>Органический Instagram</span><h3>От просмотров<br>к оплатам.</h3><p>Сопоставимые периоды год к году</p></div>
+          <div class="organic-results__stat"><strong>+94,3%</strong><span>Успешные продажи</span><p>140 <i>→</i> 272</p></div>
+          <div class="organic-results__stat"><strong>+120,7%</strong><span>CRM-выручка</span><p>12,96 <i>→</i> 28,59 млн ₸</p></div>
+        </div>
+        <p class="organic-footline">Органические обращения Instagram <b>+28,1%</b><span aria-hidden="true">·</span> квалифицированные обращения <b>+42,9%</b></p>
         <div class="social-proof">
-          <div><strong>59 930</strong><span>новых подписок на трёх площадках</span></div>
+          <div><strong>78,2 млн</strong><span>просмотров на трёх площадках</span></div>
+          <div><strong>59 930</strong><span>новых подписок</span></div>
           <div><strong>865</strong><span>опубликованных единиц контента</span></div>
         </div>
         <div class="subhead"><h3>Рост аудитории</h3><p>До / после, округлённые значения</p></div>
