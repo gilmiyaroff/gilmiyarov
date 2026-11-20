@@ -258,6 +258,36 @@
       .hero-stat strong,.hero-stat:last-child strong{font-size:clamp(40px,9vw,50px)}
       .follow-compare strong{font-size:clamp(21px,5vw,26px)}
     }
+
+    /* Editorial cleanup: fewer micro-captions, clear white figures on indigo. */
+    .hero-stat strong,.organic-results__stat strong{color:#FFFFFF}
+    .hero-stat{border-top-width:2px}
+    .hero-stat p{font-size:clamp(16px,1.6vw,20px);line-height:1.45}
+    .eyebrow,.section-index{font-size:13px;letter-spacing:.09em}
+    .section-head p{font-size:17px;line-height:1.6}
+    .lead-trend__name{font-size:15px;line-height:1.4;color:#444C70}
+    .lead-trend__values span small{font-size:13px;color:#626984}
+    .lead-trend__values strong{color:#2C3360;font-size:19px}
+    .action-list span{font-size:15px;line-height:1.55}
+    .organic-results__intro span{font-size:13px;letter-spacing:.06em;color:#FFFFFF}
+    .organic-results__stat span{font-size:16px}
+    .social-proof span{font-size:16px;line-height:1.45}
+    .follow-compare span{font-size:13px;color:#505975}
+    .follow-compare div:last-child strong{color:#2C3360}
+    .view-stat span{font-size:15px}
+    .product-feature p{font-size:16px;line-height:1.55}
+    .system-step p{font-size:15px;line-height:1.55}
+    @media(max-width:720px){
+      .hero-stat p{font-size:14px}
+      .social-proof span{font-size:15px}
+      .lead-trend__values strong{font-size:17px}
+    }
+    @media(max-width:480px){
+      .hero-stat p{font-size:13px}
+      .follow-compare span{font-size:12px}
+      .organic-results__stat span{font-size:14px}
+      .section-head p{font-size:16px}
+    }
   </style>
 </head>
 <body>
@@ -272,7 +302,7 @@
       <div class="wrap">
         <p class="eyebrow">Онлайн-образование · Год работы над проектом</p>
         <h1 id="title">Qazline.<br><span>Маркетинг как система роста.</span></h1>
-        <p class="hero-lead">За год работы выстроил системный маркетинг онлайн-школы, собрал команду и связал привлечение, продажи, контент и развитие продукта. Результат — рост аудитории и показателей бизнеса.</p>
+        <p class="hero-lead">Выстроил системный маркетинг онлайн-школы: команда, лиды, продажи, контент и продукт. За год — рост аудитории и показателей бизнеса.</p>
         <div class="hero-results" aria-label="Ключевые результаты">
           <div class="hero-stat"><strong>+38%</strong><p>Денежные поступления</p></div>
           <div class="hero-stat"><strong>+163%</strong><p>Квалифицированные лиды</p></div>
@@ -298,12 +328,12 @@
       <div class="wrap">
         <div class="section-head">
           <div><span class="section-index">01 / Привлечение</span><h2 id="leads-title">Качество входящего потока.</h2></div>
-          <p>Смотрел на воронку в CRM: сколько обращений пришло, какая часть квалифицирована и как источники приводят к реальным продажам.</p>
+          <p>Отслеживал объём и качество заявок — от обращения до продажи.</p>
         </div>
         <div class="leads-area">
           <div>
             <div class="lead-trend" aria-label="Рост лидов и квалификации за сопоставимые периоды">
-              <div class="minor-title">Лиды · до и после</div>
+              
               <div class="lead-trend__row">
                 <span class="lead-trend__name">Лиды отслеживаемых каналов CRM</span>
                 <div class="lead-trend__values"><span><small>До</small><b>4 917</b></span><i aria-hidden="true">→</i><span><small>После</small><b>11 055</b></span><strong>+124,8%</strong></div>
@@ -319,22 +349,22 @@
             </div>
           </div>
           <ul class="action-list" aria-label="Что было сделано с лидогенерацией">
-            <li><strong>Настроил прозрачность источников</strong><span>Разделил платный и органический спрос, связал заявки с каналами привлечения.</span></li>
-            <li><strong>Ввёл контроль качества</strong><span>Отдельно отслеживал входящие заявки, квалификацию и дальнейшие продажи.</span></li>
-            <li><strong>Объединил маркетинг и продажи</strong><span>Результаты каналов оценивались не только по объёму обращений, но и по работе воронки.</span></li>
+            <li><strong>Настроил прозрачность источников</strong><span>Связал заявки с источниками привлечения.</span></li>
+            <li><strong>Ввёл контроль качества</strong><span>Отслеживал квалификацию и продажи.</span></li>
+            <li><strong>Объединил маркетинг и продажи</strong><span>Оценивал каналы по результату всей воронки.</span></li>
           </ul>
         </div>
       </div>
     </section>
     <section class="section social" id="social" aria-labelledby="social-title">
       <div class="wrap">
-        <div class="section-head"><div><span class="section-index">02 / Контент и соцсети</span><h2 id="social-title">Контент, который приводит к продажам.</h2></div><p>Выстроил регулярное производство контента для Instagram, TikTok и YouTube, объединив рост аудитории с измерением обращений и продаж.</p></div>
+        <div class="section-head"><div><span class="section-index">02 / Контент и соцсети</span><h2 id="social-title">Контент, который приводит к продажам.</h2></div><p>Выстроил контент-систему для Instagram, TikTok и YouTube с фокусом на рост и продажи.</p></div>
         <div class="organic-results" aria-label="Коммерческий результат органического Instagram">
           <div class="organic-results__intro"><span>Органический Instagram</span><h3>От просмотров к оплатам.</h3></div>
           <div class="organic-results__stat"><strong>+94%</strong><span>Успешные продажи</span></div>
           <div class="organic-results__stat"><strong>+120%</strong><span>Выручка</span></div>
         </div>
-        <p class="organic-footline">Органические обращения Instagram <b>+28,1%</b><span aria-hidden="true">·</span> квалифицированные обращения <b>+42,9%</b></p>
+        
         <div class="social-proof">
           <div><strong>78,2 млн</strong><span>просмотров на трёх площадках</span></div>
           <div><strong>59 930</strong><span>новых подписок</span></div>
@@ -366,19 +396,19 @@
         <div class="section-head"><div><span class="section-index">03 / Продукт</span><h2 id="product-title">Интерактивное обучение.</h2></div><p>Разработал прототипы уроков, где просмотр видео дополняется заданиями и проверкой ответов.</p></div>
         <div class="product-feature">
           <div><span class="section-index">Реализованный прототип</span><h3>От видео к практике.</h3></div>
-          <p>Ученик изучает материал, затем закрепляет его в интерактивных заданиях. Один из примеров — урок «Кию».</p>
+          <p>Видео и интерактивные задания в одном уроке. Пример — «Кию».</p>
           <a href="https://gilmiyaroff.github.io/qazline_test/" target="_blank" rel="noopener noreferrer">Посмотреть урок ↗</a>
         </div>
       </div>
     </section>
     <section class="section system" id="system" aria-labelledby="system-title">
       <div class="wrap">
-        <div class="section-head"><div><span class="section-index">04 / Управление</span><h2 id="system-title">Как организовал работу маркетинга.</h2></div><p>Управленческие изменения, которые позволили регулярно планировать, исполнять и оценивать работу команды.</p></div>
+        <div class="section-head"><div><span class="section-index">04 / Управление</span><h2 id="system-title">Как организовал работу маркетинга.</h2></div><p>Единый процесс: от приоритетов до оценки результата.</p></div>
         <div class="system-flow">
-          <div class="system-step"><span class="no">01</span><h3>Приоритеты</h3><p>Планирование направлений, гипотез и ожидаемых результатов.</p></div>
-          <div class="system-step"><span class="no">02</span><h3>Команда и роли</h3><p>Распределение задач, зоны ответственности и координация исполнения.</p></div>
-          <div class="system-step"><span class="no">03</span><h3>Отчётность</h3><p>Единый обзор показателей рекламы, контента и продаж для команды.</p></div>
-          <div class="system-step"><span class="no">04</span><h3>Рабочий ритм</h3><p>Регулярные встречи, разбор результатов и выбор следующих действий.</p></div>
+          <div class="system-step"><span class="no">01</span><h3>Приоритеты</h3><p>Планирование гипотез и результатов.</p></div>
+          <div class="system-step"><span class="no">02</span><h3>Команда и роли</h3><p>Задачи и зоны ответственности.</p></div>
+          <div class="system-step"><span class="no">03</span><h3>Отчётность</h3><p>Показатели рекламы, контента и продаж.</p></div>
+          <div class="system-step"><span class="no">04</span><h3>Рабочий ритм</h3><p>Встречи, итоги, следующие шаги.</p></div>
         </div>
       </div>
     </section>
